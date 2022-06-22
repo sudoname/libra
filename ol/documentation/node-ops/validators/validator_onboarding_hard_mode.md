@@ -146,6 +146,7 @@ For more details: (../devs/OS_dependencies.md)
 This takes a while, ensure your are still inside the `tmux` session to avoid your session gets disconnected.
 
 ```bash
+git fetch --all; git checkout -f <git release>; git reset --hard <git release>; git clean -f; git pull
 cd </path/to/libra-source/> 
 make bins install
 ```
